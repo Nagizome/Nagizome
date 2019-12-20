@@ -1,0 +1,272 @@
+body {
+    font-family: "Avenir Next";
+}
+  
+  /* ヘッダーリスト、メニューバー */
+li {
+    list-style: none;
+    float: left;
+    padding:33px 20px;
+    font-family: serif;
+}
+  
+/* ヘッダー */
+.header {
+    background-color: #0d0015;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+img.headerlogo {
+    width: 60%;
+    float:left;
+    max-width :350px;
+    /* 最大幅350pxより大きくならない */
+    /* ヘッダーロゴのサイズと、メニューバーをインライン要素で横並びにさせる */
+}
+
+.header-button li :hover {
+    background-color: #752100;
+    /* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+    /* リンクの下線を消す */
+    text-decoration: none;
+    text-decoration: none;
+}
+/* ----- 背景用の動画ファイル ----- */
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('poster.jpg') no-repeat;
+    background-size: cover;
+   }
+/* メイン中身 */
+.main {
+    height: 1500px;
+    position: relative;/*相対配置*/
+    margin: 0px;
+    padding: 0px;
+}
+.contents-item{/*用語紹介親div*/
+    position: relative;/*相対配置*/
+    height: 100px
+    }
+
+    .contents-item p {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size: 1.5em;/*サイズ倍*/
+    font-family :serif;
+    top: 5%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100px;
+    }
+    .acd-content {
+        font-size: 1.5em;
+    }
+    .未知の生物 p {
+    font-size: 1.5em;/*サイズ倍*/
+    font-family :serif;
+    /* margin-left:auto;
+    margin-right:auto;
+    margin: 10px auto; */
+    /* margin-left: 130px;
+        margin-top: 60px; */
+        margin-bottom: 20px;
+    }
+    .役割 p {
+        margin-left: 130px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    /* 精霊divで囲んで、中央に寄せる */
+    .精霊 {
+        margin: 0px auto;
+        width:750px;
+    }
+    .希精霊 {
+        margin: 0px auto;
+        width:750px;
+    }
+    .剣士 {
+        margin: 90px auto;
+        width:750px;
+        margin-top: 0px;
+    }
+    .呪術師 {
+        margin: 90px auto;
+        width:750px;
+        margin-top: 0px;
+    }
+    .霊斬刀 {
+        margin: 90px auto;
+        width:750px;
+        margin-top: 0px;
+    }
+    .霊斬隊 {
+        margin: 90px auto;
+        width:750px;
+    }
+    .剣正隊 {
+        margin: 90px auto;
+        width:750px;
+    }
+    .真王 {
+        margin: 90px auto;
+        width:750px;
+    }
+    .大公 {
+        margin: 90px auto;
+        width:750px;
+    }
+    .帝都剣術学園 {
+        margin: 90px auto;
+        width:750px;
+    }
+    
+/* 開閉式ボタン */
+    .acd-check{
+        display: none;
+    }
+    .acd-label{
+        border: 1px solid #0d0015;
+        background: #fff;
+        color: black;
+        font-size: 1.3em;
+        /* color: black; */
+        font-family :serif;
+        display: block;
+        width: 700px;
+        /* margin-bottom: 5px; */
+        padding: 10px;
+        /* 文字をひとマス右に */
+        padding: 15px 30px ;
+    }
+    label:hover{
+        background: #752100;
+        color: #FFF;
+        height: 120%;
+        left: -10%;
+        -webkit-transform: skewX(15deg);
+        transform: skewX(15deg);
+        z-index: -1;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all  0.4s ease;
+    }
+    .cp_actab input[type=checkbox] + label::after {
+        content: '+';
+    }
+    .cp_actab input[type=checkbox]:checked + label::after {
+        transform: rotate(315deg);
+    }
+
+    /* タブ共通内容 */
+    .acd-content{
+        /* border: 1px solid #fef4f4; */
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        font-size: 1em;
+        font-family :serif;
+        height: 0;
+        opacity: 0;
+        padding: 0 10px;
+        transition: .5s;
+        visibility: hidden;
+    }
+    .acd-check:checked + .acd-label + .acd-content{
+        height: 40px;
+        opacity: 1;
+        padding: 10px;
+        visibility: visible;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+.btn{
+    border-radius: 5px;
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    margin: 50px;
+}
+  
+.contents-item img {
+  width: 70%;
+  min-width:410px
+}
+
+
+  /* フッダー */
+.footer {
+    background-color: #0d0015;
+    color: #fff;
+    height: 660px;
+    margin: 0px;
+    padding: 0px;
+}
+.柳染めのハルロゴぼかし img {
+    width: 45%;
+    height: auto;
+}
+img.footerlogo{
+    width: 60%;
+    max-width :350px; 
+    /* 最大幅350pxより大きくならない */
+    /* フッダーロゴの大きさ */
+}
+/* フッダーリスト */
+.footer-button li {
+    color:#e8ecef;
+}
+
+.footer-button li :hover{
+    background-color: #752100;
+/* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+    
+
+}
+/* ヘッダーロゴ、柳染めのハル */
+/* .header-logo {
+    float: left;
+    font-family: serif;
+    font-size: 36px; */
+    /* 上下の余白を20px、左右の余白を40pxにしてください */
+    /* padding: 20px 40px; */
+    /* position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: serif;
+} */
+/* フッダーロゴ 
+.footer-logo{
+    font-size: 60px;
+     余白 
+    padding: 20px ;
+    font-family: serif;
+} */ 
+.footer-button li {
+    font-family: serif;
+}
