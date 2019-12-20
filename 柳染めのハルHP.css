@@ -1,0 +1,134 @@
+body {
+    font-family: "Avenir Next";
+}
+  
+  /* ヘッダーリスト、メニューバー */
+li {
+    list-style: none;
+    float: left;
+    padding:33px 20px;
+    font-family: serif;
+}
+  
+/* ヘッダー */
+.header {
+    background-color: #0d0015;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+/* ヘッダーロゴのサイズと、メニューバーをインライン要素で横並びにさせる */
+img.headerlogo {
+    width: 60%;
+    float:left;
+    max-width :350px;
+    /* 最大幅350pxより大きくならない */
+}
+
+.header-button{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-button li :hover {
+    background-color: #752100;
+    /* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+}
+
+/* メイン中身 */
+.main {
+    height: 1500px;
+    position: relative;/*相対配置*/
+    margin: 0px;
+    padding: 0px;
+}
+
+/* メインロゴ敵は人か精霊か */
+/* .contents-item h1, h3 { */
+    /* position:absolute;絶対配置 */
+    /* color: white;文字は白に */
+    /* font-weight: bold; 太字に */
+    /* font-size: 3em,2em;サイズ2倍 */
+    /* top: 0;
+    left: 0; */
+    /* font-family: serif;
+    /* 縦書き（右寄せ） */
+    /* writing-mode: vertical-rl;
+    float: right;
+} */ 
+
+/* .btn{
+    border-radius: 5px;
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    margin: 50px;
+} */
+  
+.contents-item img {
+  width: 100%;
+}
+
+  /* フッダー */
+.footer {
+    background-color: #0d0015;
+    color: #fff;
+    height: 660px;
+    margin: 0px;
+    padding: 0px;
+}
+.柳染めのハルロゴぼかし img {
+    width: 45%;
+    height: auto;
+}
+/* フッダーロゴの大きさ */
+img.footerlogo{
+    width: 60%;
+    max-width :350px; 
+    /* 最大幅350pxより大きくならない */
+}
+/* フッダーリスト */
+.footer-button li {
+    color:#e8ecef;
+}
+
+.footer-button li :hover{
+    background-color: #752100;
+/* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+    
+
+}
+/* ヘッダーロゴ、柳染めのハル */
+/* .header-logo {
+    float: left;
+    font-family: serif;
+    font-size: 36px; */
+    /* 上下の余白を20px、左右の余白を40pxにしてください */
+    /* padding: 20px 40px; */
+    /* position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: serif;
+} */
+/* フッダーロゴ 
+.footer-logo{
+    font-size: 60px;
+     余白 
+    padding: 20px ;
+    font-family: serif;
+} */ 
+.footer-button li {
+    font-family: serif;
+}
