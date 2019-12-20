@@ -1,0 +1,175 @@
+body {
+    font-family: "Avenir Next";
+}
+  
+  /* ヘッダーリスト、メニューバー */
+li {
+    list-style: none;
+    float: left;
+    padding:33px 20px;
+    font-family: serif;
+}
+  
+/* ヘッダー */
+.header {
+    background-color: #0d0015;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+img.headerlogo {
+    width: 60%;
+    float:left;
+    max-width :350px;
+    /* 最大幅350pxより大きくならない */
+    /* ヘッダーロゴのサイズと、メニューバーをインライン要素で横並びにさせる */
+}
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+.header-button li :hover {
+    background-color: #752100;
+    /* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+}
+/* メイン中身 */
+/* .main {
+    height: 1500px;
+    position: relative;/*相対配置*/
+    /* margin: 0px;
+    padding: 0px;
+} */ 
+.contents-item{/*親div*/
+    position: relative;/*相対配置*/
+    }
+
+    .contents-item p {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    font-size: 1.5em;/*サイズ倍*/
+    font-family :serif;
+    top: 5%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    width: 100px;
+    }
+
+    .contents-item img {
+        width: 100%;
+        }    
+/* メインロゴ敵は人か精霊か */
+/* .contents-item h1, h3 { */
+    /* position:absolute;絶対配置 */
+    /* color: white;文字は白に */
+    /* font-weight: bold; 太字に */
+    /* font-size: 3em,2em;サイズ2倍 */
+    /* top: 0;
+    left: 0; */
+    /* font-family: serif;
+    /* 縦書き（右寄せ） */
+    /* writing-mode: vertical-rl;
+    float: right;
+} */ 
+
+/* .btn{
+    border-radius: 5px;
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    margin: 50px;
+} */
+/* 文字を乗算　mix-blend-mode:multiply; */
+.ep{position:absolute;top: 10%;left: 50%;transform : translate(-50%,-50%);width: 250px;;font-size:20px;font-size:8rem;font-weight:normal;mix-blend-mode:multiply;color:#752100;z-index:1;margin-top: 0px;}
+
+.contents-item img {
+  width: 100%;
+}
+
+    abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,
+    li,ul,video
+    {margin:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+    body{line-height:1}article,
+    input,select{vertical-align:middle}html{font-size:62.5%}
+    body{background:#fff;font-family:'Amiri', "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;color:#222;text-align:left;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;font-size:14px;font-size:1.4rem;line-height:2;font-weight:normal}
+    table{font-size:inherit;width:100%;border-collapse:collapse;border:0}
+    .box_chara .cv,.box_chara .personal,.box_products .txt,.box_shop,.box_story .box .txt,
+    .list01 a .ttl,.list_staffcast .part,.m_fontM{font-size:16px;font-size:1.6rem;line-height:2;font-weight:normal}
+    .box_story{display:none;position:relative;margin-top:40px;padding-top:0px;background: no-repeat 50% 0;background-size:100% auto}
+    .box_story .ttl{position:relative;width:464px;padding:8px 10px 0;margin:0 0 30px 776px;font-size:32px;font-size:3.2rem;line-height:1.2;font-weight:normal;color:#fff;-webkit-font-feature-settings:'palt';font-feature-settings:'palt';overflow:hidden}
+    .box_story .ttl:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:#640125;mix-blend-mode:multiply}
+    .box_story .ttl span{position:relative}
+    .box_story .img_main{position:absolute;top:0;left:0;width:840px;height:472px}
+    .box_story .img_main img{width:100%}.box_story .box{position:relative;width:1240px;margin:0 auto;min-height:497px;padding-top:40px}
+    .box_story .box ul{position:relative;margin-left:400px;overflow:hidden}
+    .box_story .box li{position:relative;float:left;width:160px;height:88px;background:#fff;overflow:hidden;cursor:pointer}
+    .box_story .box li:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:#a8c97f;mix-blend-mode:multiply;opacity:0;-webkit-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+    .box_story .box li img{width:100%}.box_story .box li.is-active:after,.box_story 
+    .box li:hover:after{opacity:1}.box_story .box .txt{position:relative;margin:0 0 30px 880px;padding-right:40px;-webkit-font-feature-settings:'palt';font-feature-settings:'palt';color: #0d0015;}
+
+    .footer {
+    background-color: #0d0015;
+    color: #fff;
+    height: 660px;
+    margin: 0px;
+    padding: 0px;
+}
+.柳染めのハルロゴぼかし img {
+    width: 45%;
+    height: auto;
+}
+img.footerlogo{
+    width: 60%;
+    max-width :350px; 
+    /* 最大幅350pxより大きくならない */
+    /* フッダーロゴの大きさ */
+}
+/* フッダーリスト */
+.footer-button li {
+    color:#e8ecef;
+}
+
+.footer-button li :hover{
+    background-color: #752100;
+/* hoverでふわっとする。1s が1秒 */
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+    padding: 4px;
+    
+
+}
+/* ヘッダーロゴ、柳染めのハル */
+/* .header-logo {
+    float: left;
+    font-family: serif;
+    font-size: 36px; */
+    /* 上下の余白を20px、左右の余白を40pxにしてください */
+    /* padding: 20px 40px; */
+    /* position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: serif;
+} */
+/* フッダーロゴ 
+.footer-logo{
+    font-size: 60px;
+     余白 
+    padding: 20px ;
+    font-family: serif;
+} */ 
+.footer-button li {
+    font-family: serif;
+}
