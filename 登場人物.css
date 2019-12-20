@@ -58,6 +58,14 @@ img.headerlogo {
   transform : translate(-50%,-50%);
   width: 100px;
     }
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
 .haru p {
     position: absolute;/*絶対配置*/
     font-size: 1.3em;/*サイズ倍*/
